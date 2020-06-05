@@ -1,0 +1,23 @@
+{
+  "name": "ipfy.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "public",
+    "ip",
+    "ipv4",
+    "ipv6",
+    "address"
+  ],
+  "author": "Vikramaditya Kokil",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^3.8.2",
+    "validator": "^13.0.0",
+    "xhr-mock": "^2.5.1"
+  }
+}
