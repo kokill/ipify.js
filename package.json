@@ -1,10 +1,11 @@
 {
   "name": "ipfy.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "uglifyjs lib/index.js -c -m -e -o dist/index.js"
   },
   "keywords": [
     "public",
@@ -17,6 +18,8 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "^3.8.2",
+    "gzip-size": "^5.1.1",
+    "uglify-js": "^3.9.4",
     "validator": "^13.0.0",
     "xhr-mock": "^2.5.1"
   }

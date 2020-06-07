@@ -1,7 +1,7 @@
 const xhrMock = require('xhr-mock');
 const test = require('ava');
 const validator = require('validator');
-const {ipv4, ipv6} = require('.');
+const {ipv4, ipv6} = require('./index');
 
 const { default: mock,proxy } = xhrMock;
 
