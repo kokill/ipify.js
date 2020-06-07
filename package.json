@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
+    "prepublish": "npm run build",
     "build": "uglifyjs lib/index.js -c -m -e -o dist/index.js"
   },
   "keywords": [
