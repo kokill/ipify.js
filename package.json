@@ -14,7 +14,7 @@
     "address"
   ],
   "author": "Vikramaditya Kokil",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "ava": "^3.8.2",
     "validator": "^13.0.0",

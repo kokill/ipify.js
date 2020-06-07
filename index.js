@@ -1,6 +1,6 @@
 var ipv4Path = "https://api.ipify.org/";
 var ipv6Path = "https://api6.ipify.org/";
-function makeRequest(endpoint) {
+function makeBrowserRequest(endpoint) {
 	return new Promise(function (resolve, reject) {
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function () {
@@ -36,7 +36,7 @@ function makeServerRequest(endpoint) {
 exports.ipv4 = function (endpoint) {
 	var apiPath = endpoint || ipv4Path;
 	if (typeof(module) === 'undefined') {
-		return makeRequest(apiPath)
+		return makeBrowserRequest(apiPath)
 	}
 	return makeServerRequest(apiPath)
 };
@@ -44,7 +44,7 @@ exports.ipv4 = function (endpoint) {
 exports.ipv6 = function (endpoint) {
 	var apiPath = endpoint || ipv6Path;
 	if (typeof(module) === 'undefined') {
-		return makeRequest(apiPath)
+		return makeBrowserRequest(apiPath)
 	}
 	return makeServerRequest(apiPath)
 };

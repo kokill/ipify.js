@@ -33,5 +33,3 @@ test('Custom IP api', async t => {
 	const { ip } = JSON.parse(body);
 	t.true(validator.isIP(ip));
 });
-
-// https://intellipaat.com/
