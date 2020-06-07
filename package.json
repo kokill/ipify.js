@@ -16,6 +16,10 @@
     "address"
   ],
   "author": "Vikramaditya Kokil",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokill/ipify.js.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "ava": "^3.8.2",
